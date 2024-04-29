@@ -5,6 +5,7 @@ import java.awt.*;
 import java.util.List;
 // Import all classes into this file
 import assignment3.packages.*;
+import assignment3.packages.Category;
 
 public class CategoryFilterPanel extends JPanel {
     private ExpensesManager expensesManager;
@@ -13,6 +14,7 @@ public class CategoryFilterPanel extends JPanel {
 
 
     private JButton restoreButton;
+    private JButton filterButton;
 
 
     public CategoryFilterPanel(ExpensesManager expensesManager, SavedExpensesPanel savedExpensesPanel) {
