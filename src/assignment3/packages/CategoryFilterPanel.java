@@ -3,6 +3,8 @@ package assignment3.packages;
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
+// Import all classes into this file
+import assignment3.packages.*;
 
 public class CategoryFilterPanel extends JPanel {
     private ExpensesManager expensesManager;
