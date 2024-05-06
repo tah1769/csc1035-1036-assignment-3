@@ -24,7 +24,6 @@ public class CategoryFilterPanel extends JPanel {
         this.savedExpensesPanel = savedExpensesPanel;
 
         JComboBox<Category> filterComboBox;
-        JButton filterButton;
 
         setLayout(new FlowLayout(FlowLayout.LEFT));
 
@@ -73,6 +72,11 @@ public class CategoryFilterPanel extends JPanel {
         if (previouslySavedExpenses != null) {
             savedExpensesPanel.updateTable(previouslySavedExpenses);
         }
+    }
+
+    public void getSum(){
+        System.out.println("Test");
+    totalAmt.setText("UPDATED");
     }
 
 
