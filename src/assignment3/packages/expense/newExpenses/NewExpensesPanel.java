@@ -15,6 +15,7 @@ public class NewExpensesPanel extends JPanel {
     private final JComboBox<Integer> yearComboBox;
     private final JButton saveButton;
     private final JButton clearButton;
+    private final JButton deleteButton;
     private final JButton editButton;
 
     public NewExpensesPanel() {
@@ -41,12 +42,14 @@ public class NewExpensesPanel extends JPanel {
 
         saveButton = new JButton("Save");
         editButton = new JButton("Edit");
+        deleteButton = new JButton("Delete");
         clearButton = new JButton("Clear");
 
         // Add action listeners for buttons...
 
         add(saveButton);
         add(editButton);
+        add(deleteButton);
         add(clearButton);
 
     }
@@ -59,6 +62,8 @@ public class NewExpensesPanel extends JPanel {
     public JButton getClearButton() {
         return clearButton;
     }
+
+    public JButton getDeleteButton() { return deleteButton; }
 
     public JButton getEditButton() {
         return editButton;
