@@ -99,5 +99,9 @@ public class Main {
 
         categoryFilterPanel.getRestoreButton().addActionListener(e -> categoryFilterPanel.restoreFilter());
 
+        // Sum Button ActionListener
+
+        categoryFilterPanel.getSumButton().addActionListener(e -> categoryFilterPanel.getSum());
+
     }
 }
