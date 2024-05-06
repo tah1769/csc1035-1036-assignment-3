@@ -75,8 +75,15 @@ public class CategoryFilterPanel extends JPanel {
     }
 
     public void getSum(){
-        System.out.println("Test");
-    totalAmt.setText("UPDATED");
+        List<Expense> savedExpenses = savedExpensesPanel.getExpenses();
+        double totalAmount = 0.0;
+
+        for (Expense expense : savedExpenses) {
+            totalAmount += expense.amount();
+        }
+        System.out.println(savedExpenses);
+        System.out.println(totalAmount);
+        totalAmt.setText("Total: " + totalAmount);
     }
 
 
