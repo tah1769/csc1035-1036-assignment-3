@@ -13,7 +13,7 @@ public class CategoryFilterPanel extends JPanel {
     private ExpensesManager expensesManager;
     private SavedExpensesPanel savedExpensesPanel;
 
-
+    private JLabel totalAmt;
     private JButton sumButton;
     private JButton restoreButton;
     private JButton filterButton;
@@ -39,6 +39,10 @@ public class CategoryFilterPanel extends JPanel {
 
         sumButton = new JButton("Sum");
         add(sumButton);
+
+        totalAmt = new JLabel("Total: 0");
+        //.setText allows for label text manipulation
+        add(totalAmt);
 
     }
 
