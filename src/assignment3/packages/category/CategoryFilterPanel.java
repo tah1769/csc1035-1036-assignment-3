@@ -14,7 +14,7 @@ public class CategoryFilterPanel extends JPanel {
     private SavedExpensesPanel savedExpensesPanel;
 
 
-
+    private JButton sumButton;
     private JButton restoreButton;
     private JButton filterButton;
     private JComboBox<String> filterComboBox;
@@ -37,6 +37,9 @@ public class CategoryFilterPanel extends JPanel {
         restoreButton = new JButton("Restore");
         add(restoreButton);
 
+        sumButton = new JButton("Sum");
+        add(sumButton);
+
     }
 
     // Methods to get the selected category
@@ -49,6 +52,9 @@ public class CategoryFilterPanel extends JPanel {
         return restoreButton;
     }
 
+    public JButton getSumButton() {
+        return sumButton;
+    }
 
 
     public void applyFilter() {
