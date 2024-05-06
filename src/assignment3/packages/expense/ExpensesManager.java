@@ -37,7 +37,6 @@ public class ExpensesManager {
         expenses.clear();
     }
 
-
     // return the entire list of expenses added so far
     public List<Expense> getAllExpenses() {
         return new ArrayList<>(expenses);
