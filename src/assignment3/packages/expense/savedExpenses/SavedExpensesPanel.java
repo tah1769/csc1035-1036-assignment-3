@@ -32,6 +32,7 @@ public class SavedExpensesPanel extends JPanel {
         savedExpenses.setExpenses(expenses);
     }
 
+    public List<Expense> getExpenses() { return savedExpenses.getExpenses(); }
 
     public List<Expense> getpreviouslySavedExpenses() {
         return previouslySavedExpenses;
