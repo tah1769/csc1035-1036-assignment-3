@@ -66,8 +66,12 @@ public class Main {
                 boolean saved = editDialog.showDialog(selectedExpense);
                 if (saved) {
                     Expense editedExpense = editDialog.getEditedExpense();
-                    expensesManager.replaceExpense(selectedRow, selectedExpense);
-                    savedExpensesPanel.updateTable(expensesManager.getAllExpenses());
+                    if (editedExpense.amount() == 0) {
+                        JOptionPane.showMessageDialog(frame, "Unable to edit an expense to 0", "Error", JOptionPane.ERROR_MESSAGE);
+                    } else {
+                        expensesManager.replaceExpense(selectedRow, selectedExpense);
+                        savedExpensesPanel.updateTable(expensesManager.getAllExpenses());
+                    }
                 }
                 }
         });
