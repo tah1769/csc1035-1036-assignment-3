@@ -81,8 +81,6 @@ public class CategoryFilterPanel extends JPanel {
         for (Expense expense : savedExpenses) {
             totalAmount += expense.amount();
         }
-        System.out.println(savedExpenses);
-        System.out.println(totalAmount);
         totalAmt.setText("Total: " + totalAmount);
     }
 
