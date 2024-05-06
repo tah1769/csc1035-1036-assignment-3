@@ -72,6 +72,17 @@ public class Main {
                 }
         });
 
+        // Delete Button ActionListener
+        newExpensesPanel.getDeleteButton().addActionListener(e -> {
+            int selectedRow = savedExpensesPanel.getSavedSelectedExpenseIndex();
+            if (selectedRow != -1) {
+                // get the index
+                Expense selectedExpense = expensesManager.getAllExpenses().get(selectedRow);
+                    expensesManager.removeExpense(selectedExpense);
+                    savedExpensesPanel.updateTable(expensesManager.getAllExpenses());
+                    savedExpensesPanel.updateTable(expensesManager.getAllExpenses());
+            }
+        });
 
         // Clear Button ActionListener
         newExpensesPanel.getClearButton().addActionListener(e -> {
