@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="000bd51d-c64b-49fb-8be4-a23a7fb7a6f4" name="Changes" comment="Initial commit">
+    <list default="true" id="000bd51d-c64b-49fb-8be4-a23a7fb7a6f4" name="Changes" comment="Created the filterComboBox variable a property of the parent class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment3/packages/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/packages/category/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment3/packages/CategoryFilterPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/packages/category/CategoryFilterPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment3/packages/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/packages/expense/Expense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment3/packages/ExpensesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/packages/expense/ExpensesManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment3/packages/NewExpensesPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/packages/expense/newExpenses/NewExpensesPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment3/packages/SavedExpenses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/packages/expense/savedExpenses/SavedExpenses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment3/packages/SavedExpensesEditDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/packages/expense/savedExpenses/SavedExpensesEditDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment3/packages/SavedExpensesPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/packages/expense/savedExpenses/SavedExpensesPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +34,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="2cP0ldI0n56ThWNWcI1WgQNvi7r" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -38,15 +50,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="assignment3.Main" />
       <module name="csc1035-1036-assignment-3" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="csc1035-1036-assignment-3" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,7 +95,49 @@
       <option name="project" value="LOCAL" />
       <updated>1714140380298</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1714399274280</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714399274280</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial commit">
+      <created>1714399310193</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714399310193</updated>
+    </task>
+    <task id="LOCAL-00005" summary="expenses ArrayList properly created">
+      <created>1714399461124</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714399461124</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Imported classes into file">
+      <created>1714400364674</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714400364674</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed applyFilter event listener">
+      <created>1715010840958</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715010840958</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created the filterComboBox variable a property of the parent class">
+      <created>1715011398420</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715011398420</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +157,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="expenses ArrayList properly created" />
+    <MESSAGE value="Imported classes into file" />
+    <MESSAGE value="Fixed applyFilter event listener" />
+    <MESSAGE value="Created the filterComboBox variable a property of the parent class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the filterComboBox variable a property of the parent class" />
   </component>
 </project>

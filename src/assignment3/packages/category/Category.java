@@ -1,4 +1,4 @@
-package assignment3.packages;
+package assignment3.packages.category;
 
 public enum Category {
     GROCERIES("Groceries"),

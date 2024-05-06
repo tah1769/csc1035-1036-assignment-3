@@ -1,11 +1,13 @@
-package assignment3.packages;
+package assignment3.packages.category;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
 // Import all classes into this file
-import assignment3.packages.*;
-import assignment3.packages.Category;
+import assignment3.packages.category.Category;
+import assignment3.packages.expense.Expense;
+import assignment3.packages.expense.ExpensesManager;
+import assignment3.packages.expense.savedExpenses.SavedExpensesPanel;
 
 public class CategoryFilterPanel extends JPanel {
     private ExpensesManager expensesManager;

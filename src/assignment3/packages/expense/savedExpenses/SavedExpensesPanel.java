@@ -1,4 +1,7 @@
-package assignment3.packages;
+package assignment3.packages.expense.savedExpenses;
+
+import assignment3.packages.expense.Expense;
+import assignment3.packages.expense.savedExpenses.SavedExpenses;
 
 import javax.swing.*;
 import java.awt.*;

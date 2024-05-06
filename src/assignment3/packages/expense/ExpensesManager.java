@@ -1,4 +1,6 @@
-package assignment3.packages;
+package assignment3.packages.expense;
+
+import assignment3.packages.category.Category;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +27,10 @@ public class ExpensesManager {
         }
     }
 
+    // Delete an expense
+    public void removeExpense(Expense expense) {
+        expenses.remove(expense);
+    }
 
     // Clear all expenses
     public void clearExpenses() {
