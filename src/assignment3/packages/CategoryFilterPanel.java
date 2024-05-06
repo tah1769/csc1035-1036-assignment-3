@@ -15,7 +15,7 @@ public class CategoryFilterPanel extends JPanel {
 
     private JButton restoreButton;
     private JButton filterButton;
-
+    private JComboBox<String> filterComboBox;
 
     public CategoryFilterPanel(ExpensesManager expensesManager, SavedExpensesPanel savedExpensesPanel) {
         this.expensesManager = expensesManager;
