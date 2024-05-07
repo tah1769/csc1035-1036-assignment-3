@@ -1,6 +1,7 @@
 package assignment3;
 
 import assignment3.packages.category.Category;
+import assignment3.packages.currency.Currency;
 import assignment3.packages.category.CategoryFilterPanel;
 import assignment3.packages.expense.Expense;
 import assignment3.packages.expense.ExpensesManager;
@@ -48,9 +49,10 @@ public class Main {
         newExpensesPanel.getSaveButton().addActionListener(e ->  {
             double amount = newExpensesPanel.getAmount();
             Category category = newExpensesPanel.getExpenseCategory();
+            Currency currency = newExpensesPanel.getExpenseCurrency();
             LocalDate date = newExpensesPanel.getDate();
 
-            Expense newExpense = new Expense(amount, category, date);
+            Expense newExpense = new Expense(amount,category, currency, date);
             expensesManager.addExpense(newExpense);
             savedExpensesPanel.updateTable(expensesManager.getAllExpenses());
         });
