@@ -86,7 +86,7 @@ public class NewExpensesPanel extends JPanel {
         return (Category) categoryComboBox.getSelectedItem();
     }
 
-    public Category getExpenseCurrency() {
+    public Currency getExpenseCurrency() {
         return (Currency) currencyComboBox.getSelectedItem();
     }
 
