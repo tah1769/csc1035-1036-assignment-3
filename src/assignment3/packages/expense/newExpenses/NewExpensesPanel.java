@@ -86,6 +86,10 @@ public class NewExpensesPanel extends JPanel {
         return (Category) categoryComboBox.getSelectedItem();
     }
 
+    public Category getExpenseCurrency() {
+        return (Currency) currencyComboBox.getSelectedItem();
+    }
+
     public LocalDate getDate() {
         // Construct and return a LocalDate object from the date components
         // with dayComboBox, monthComboBox, yearComboBox
