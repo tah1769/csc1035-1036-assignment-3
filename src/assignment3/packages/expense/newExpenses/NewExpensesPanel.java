@@ -1,6 +1,7 @@
 package assignment3.packages.expense.newExpenses;
 
 import assignment3.packages.category.Category;
+import assignment3.packages.currency.Currency;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,6 +10,7 @@ import java.time.LocalDate;
 
 public class NewExpensesPanel extends JPanel {
     private final JTextField amountField;
+    private final JComboBox<Currency> currencyComboBox;
     private final JComboBox<Category> categoryComboBox;
     private final JComboBox<Integer> dayComboBox;
     private final JComboBox<String> monthComboBox;
@@ -24,6 +26,10 @@ public class NewExpensesPanel extends JPanel {
         add(new JLabel("Amount:"));
         amountField = new JTextField();
         add(amountField);
+
+        add(new JLabel("Currency:"));
+        currencyComboBox = new JComboBox<>(Currency.values());
+        add(currencyComboBox);
 
         add(new JLabel("Category:"));
         categoryComboBox = new JComboBox<>(Category.values());
