@@ -1,6 +1,7 @@
 package assignment3.packages.expense;
 
 import assignment3.packages.category.Category;
+import assignment3.packages.currency.Currency;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +48,13 @@ public class ExpensesManager {
     public List<Expense> getExpensesByCategory(Category category) {
         return expenses.stream()
                 .filter(expense -> expense.category().equals(category))
+                .collect(Collectors.toList());
+    }
+
+    // get the expense based on category for CategoryFilterPanel
+    public List<Expense> getExpensesByCurrency(Currency currency) {
+        return expenses.stream()
+                .filter(expense -> expense.currency().equals(currency))
                 .collect(Collectors.toList());
     }
 
