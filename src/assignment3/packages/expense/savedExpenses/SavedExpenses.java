@@ -7,7 +7,7 @@ import java.util.List;
 
 
 public class SavedExpenses extends AbstractTableModel {
-    private final String[] columnNames = {"Amount", "Category", "Date"};
+    private final String[] columnNames = {"Amount", "Currency", "Category", "Date"};
     private List<Expense> expenses;
 
     public SavedExpenses(List<Expense> expenses) {
@@ -34,8 +34,9 @@ public class SavedExpenses extends AbstractTableModel {
         Expense expense = expenses.get(rowIndex);
         return switch (columnIndex) {
             case 0 -> expense.amount();
-            case 1 -> expense.category().getDisplayName();
-            case 2 -> expense.date().toString();
+            case 1 -> expense.currency().getDisplayName();
+            case 2 -> expense.category().getDisplayName();
+            case 3 -> expense.date().toString();
             default -> null;
         };
     }
